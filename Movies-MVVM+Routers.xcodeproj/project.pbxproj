@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFC60BE22903E97800A96494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC60BE12903E97800A96494 /* AppDelegate.swift */; };
+		BFC60BE42903E97800A96494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC60BE32903E97800A96494 /* SceneDelegate.swift */; };
+		BFC60BE62903E97800A96494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC60BE52903E97800A96494 /* ViewController.swift */; };
+		BFC60BE92903E97800A96494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC60BE72903E97800A96494 /* Main.storyboard */; };
+		BFC60BEB2903E97900A96494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC60BEA2903E97900A96494 /* Assets.xcassets */; };
+		BFC60BEE2903E97900A96494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC60BEC2903E97900A96494 /* LaunchScreen.storyboard */; };
+		BFC60BF92903E97900A96494 /* Movies_MVVM_RoutersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC60BF82903E97900A96494 /* Movies_MVVM_RoutersTests.swift */; };
+		BFC60C032903E97900A96494 /* Movies_MVVM_RoutersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC60C022903E97900A96494 /* Movies_MVVM_RoutersUITests.swift */; };
+		BFC60C052903E97900A96494 /* Movies_MVVM_RoutersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC60C042903E97900A96494 /* Movies_MVVM_RoutersUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFC60BF52903E97900A96494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC60BD62903E97800A96494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC60BDD2903E97800A96494;
+			remoteInfo = "Movies-MVVM+Routers";
+		};
+		BFC60BFF2903E97900A96494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC60BD62903E97800A96494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC60BDD2903E97800A96494;
+			remoteInfo = "Movies-MVVM+Routers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFC60BDE2903E97800A96494 /* Movies-MVVM+Routers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movies-MVVM+Routers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC60BE12903E97800A96494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFC60BE32903E97800A96494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BFC60BE52903E97800A96494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFC60BE82903E97800A96494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFC60BEA2903E97900A96494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFC60BED2903E97900A96494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFC60BEF2903E97900A96494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC60BF42903E97900A96494 /* Movies-MVVM+RoutersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movies-MVVM+RoutersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC60BF82903E97900A96494 /* Movies_MVVM_RoutersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies_MVVM_RoutersTests.swift; sourceTree = "<group>"; };
+		BFC60BFE2903E97900A96494 /* Movies-MVVM+RoutersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movies-MVVM+RoutersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC60C022903E97900A96494 /* Movies_MVVM_RoutersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies_MVVM_RoutersUITests.swift; sourceTree = "<group>"; };
+		BFC60C042903E97900A96494 /* Movies_MVVM_RoutersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies_MVVM_RoutersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFC60BDB2903E97800A96494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC60BF12903E97900A96494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC60BFB2903E97900A96494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFC60BD52903E97800A96494 = {
+			isa = PBXGroup;
+			children = (
+				BFC60BE02903E97800A96494 /* Movies-MVVM+Routers */,
+				BFC60BF72903E97900A96494 /* Movies-MVVM+RoutersTests */,
+				BFC60C012903E97900A96494 /* Movies-MVVM+RoutersUITests */,
+				BFC60BDF2903E97800A96494 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFC60BDF2903E97800A96494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFC60BDE2903E97800A96494 /* Movies-MVVM+Routers.app */,
+				BFC60BF42903E97900A96494 /* Movies-MVVM+RoutersTests.xctest */,
+				BFC60BFE2903E97900A96494 /* Movies-MVVM+RoutersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFC60BE02903E97800A96494 /* Movies-MVVM+Routers */ = {
+			isa = PBXGroup;
+			children = (
+				BFC60BE12903E97800A96494 /* AppDelegate.swift */,
+				BFC60BE32903E97800A96494 /* SceneDelegate.swift */,
+				BFC60BE52903E97800A96494 /* ViewController.swift */,
+				BFC60BE72903E97800A96494 /* Main.storyboard */,
+				BFC60BEA2903E97900A96494 /* Assets.xcassets */,
+				BFC60BEC2903E97900A96494 /* LaunchScreen.storyboard */,
+				BFC60BEF2903E97900A96494 /* Info.plist */,
+			);
+			path = "Movies-MVVM+Routers";
+			sourceTree = "<group>";
+		};
+		BFC60BF72903E97900A96494 /* Movies-MVVM+RoutersTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFC60BF82903E97900A96494 /* Movies_MVVM_RoutersTests.swift */,
+			);
+			path = "Movies-MVVM+RoutersTests";
+			sourceTree = "<group>";
+		};
+		BFC60C012903E97900A96494 /* Movies-MVVM+RoutersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFC60C022903E97900A96494 /* Movies_MVVM_RoutersUITests.swift */,
+				BFC60C042903E97900A96494 /* Movies_MVVM_RoutersUITestsLaunchTests.swift */,
+			);
+			path = "Movies-MVVM+RoutersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFC60BDD2903E97800A96494 /* Movies-MVVM+Routers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC60C082903E97900A96494 /* Build configuration list for PBXNativeTarget "Movies-MVVM+Routers" */;
+			buildPhases = (
+				BFC60BDA2903E97800A96494 /* Sources */,
+				BFC60BDB2903E97800A96494 /* Frameworks */,
+				BFC60BDC2903E97800A96494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Movies-MVVM+Routers";
+			productName = "Movies-MVVM+Routers";
+			productReference = BFC60BDE2903E97800A96494 /* Movies-MVVM+Routers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFC60BF32903E97900A96494 /* Movies-MVVM+RoutersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC60C0B2903E97900A96494 /* Build configuration list for PBXNativeTarget "Movies-MVVM+RoutersTests" */;
+			buildPhases = (
+				BFC60BF02903E97900A96494 /* Sources */,
+				BFC60BF12903E97900A96494 /* Frameworks */,
+				BFC60BF22903E97900A96494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFC60BF62903E97900A96494 /* PBXTargetDependency */,
+			);
+			name = "Movies-MVVM+RoutersTests";
+			productName = "Movies-MVVM+RoutersTests";
+			productReference = BFC60BF42903E97900A96494 /* Movies-MVVM+RoutersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFC60BFD2903E97900A96494 /* Movies-MVVM+RoutersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC60C0E2903E97900A96494 /* Build configuration list for PBXNativeTarget "Movies-MVVM+RoutersUITests" */;
+			buildPhases = (
+				BFC60BFA2903E97900A96494 /* Sources */,
+				BFC60BFB2903E97900A96494 /* Frameworks */,
+				BFC60BFC2903E97900A96494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFC60C002903E97900A96494 /* PBXTargetDependency */,
+			);
+			name = "Movies-MVVM+RoutersUITests";
+			productName = "Movies-MVVM+RoutersUITests";
+			productReference = BFC60BFE2903E97900A96494 /* Movies-MVVM+RoutersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFC60BD62903E97800A96494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BFC60BDD2903E97800A96494 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BFC60BF32903E97900A96494 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BFC60BDD2903E97800A96494;
+					};
+					BFC60BFD2903E97900A96494 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BFC60BDD2903E97800A96494;
+					};
+				};
+			};
+			buildConfigurationList = BFC60BD92903E97800A96494 /* Build configuration list for PBXProject "Movies-MVVM+Routers" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFC60BD52903E97800A96494;
+			productRefGroup = BFC60BDF2903E97800A96494 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFC60BDD2903E97800A96494 /* Movies-MVVM+Routers */,
+				BFC60BF32903E97900A96494 /* Movies-MVVM+RoutersTests */,
+				BFC60BFD2903E97900A96494 /* Movies-MVVM+RoutersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFC60BDC2903E97800A96494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC60BEE2903E97900A96494 /* LaunchScreen.storyboard in Resources */,
+				BFC60BEB2903E97900A96494 /* Assets.xcassets in Resources */,
+				BFC60BE92903E97800A96494 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC60BF22903E97900A96494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC60BFC2903E97900A96494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFC60BDA2903E97800A96494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC60BE62903E97800A96494 /* ViewController.swift in Sources */,
+				BFC60BE22903E97800A96494 /* AppDelegate.swift in Sources */,
+				BFC60BE42903E97800A96494 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC60BF02903E97900A96494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC60BF92903E97900A96494 /* Movies_MVVM_RoutersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFC60BFA2903E97900A96494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC60C052903E97900A96494 /* Movies_MVVM_RoutersUITestsLaunchTests.swift in Sources */,
+				BFC60C032903E97900A96494 /* Movies_MVVM_RoutersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFC60BF62903E97900A96494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC60BDD2903E97800A96494 /* Movies-MVVM+Routers */;
+			targetProxy = BFC60BF52903E97900A96494 /* PBXContainerItemProxy */;
+		};
+		BFC60C002903E97900A96494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFC60BDD2903E97800A96494 /* Movies-MVVM+Routers */;
+			targetProxy = BFC60BFF2903E97900A96494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFC60BE72903E97800A96494 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC60BE82903E97800A96494 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFC60BEC2903E97900A96494 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC60BED2903E97900A96494 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFC60C062903E97900A96494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFC60C072903E97900A96494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFC60C092903E97900A96494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVAL38CUS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Movies-MVVM+Routers/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hasanaygunoglu.Movies-MVVM-Routers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFC60C0A2903E97900A96494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVAL38CUS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Movies-MVVM+Routers/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hasanaygunoglu.Movies-MVVM-Routers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFC60C0C2903E97900A96494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVAL38CUS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hasanaygunoglu.Movies-MVVM-RoutersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movies-MVVM+Routers.app/Movies-MVVM+Routers";
+			};
+			name = Debug;
+		};
+		BFC60C0D2903E97900A96494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVAL38CUS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hasanaygunoglu.Movies-MVVM-RoutersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movies-MVVM+Routers.app/Movies-MVVM+Routers";
+			};
+			name = Release;
+		};
+		BFC60C0F2903E97900A96494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVAL38CUS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hasanaygunoglu.Movies-MVVM-RoutersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Movies-MVVM+Routers";
+			};
+			name = Debug;
+		};
+		BFC60C102903E97900A96494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NVAL38CUS8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hasanaygunoglu.Movies-MVVM-RoutersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Movies-MVVM+Routers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFC60BD92903E97800A96494 /* Build configuration list for PBXProject "Movies-MVVM+Routers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC60C062903E97900A96494 /* Debug */,
+				BFC60C072903E97900A96494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC60C082903E97900A96494 /* Build configuration list for PBXNativeTarget "Movies-MVVM+Routers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC60C092903E97900A96494 /* Debug */,
+				BFC60C0A2903E97900A96494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC60C0B2903E97900A96494 /* Build configuration list for PBXNativeTarget "Movies-MVVM+RoutersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC60C0C2903E97900A96494 /* Debug */,
+				BFC60C0D2903E97900A96494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC60C0E2903E97900A96494 /* Build configuration list for PBXNativeTarget "Movies-MVVM+RoutersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC60C0F2903E97900A96494 /* Debug */,
+				BFC60C102903E97900A96494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFC60BD62903E97800A96494 /* Project object */;
+}
