@@ -14,4 +14,9 @@ extension ViewControllerMaker {
     let viewModel = SplashMainViewModel()
     return SplashViewController(viewModel: viewModel)
   }
+  
+  static func searchViewController() -> SearchViewController {
+    let manager = SearchManager()
+    return SearchViewController(manager: manager)
+  }
 }

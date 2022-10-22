@@ -14,6 +14,8 @@ extension SplashViewController {
         guard let self = self else { return }
         self.splashLabel.text = self.viewModel.splashText
         self.splashLabel.font = .systemFont(ofSize: self.viewModel.splashTextFont, weight: .bold)
+        self.activityIndicator.shouldAnimate(false)
+        self.navigationController?.pushViewController(ViewControllerMaker.searchViewController(), animated: true)
       }
     }
   }
@@ -30,6 +32,25 @@ extension SplashViewController {
     return { [weak self] in
       guard let self = self else { return }
       ConnectionErrorView.showConnectionError(on: self.view)
+      self.activityIndicator.shouldAnimate(false)
+    }
+  }
+  
+  final func startActivityIndicator() -> VoidHandler {
+    return { [weak self] in
+      guard let self = self else { return }
+      DispatchQueue.main.async {
+        self.activityIndicator.shouldAnimate(true)
+      }
+    }
+  }
+  
+  final func stopActivityIndicator() -> VoidHandler {
+    return { [weak self] in
+      guard let self = self else { return }
+      DispatchQueue.main.async {
+        self.activityIndicator.shouldAnimate(false)
+      }
     }
   }
 }

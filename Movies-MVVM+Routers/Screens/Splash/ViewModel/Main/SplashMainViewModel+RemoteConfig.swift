@@ -44,7 +44,9 @@ extension SplashMainViewModel {
   fileprivate func handleFailureStatus(error: Error?) {
     if !internetConnection.isReachable {
       showInternetConnectionError?()
+      stopActivityIndicator?()
+    } else {
+      print(error?.localizedDescription)
     }
-    print(error?.localizedDescription)
   }
 }

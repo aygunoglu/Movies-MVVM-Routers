@@ -10,6 +10,7 @@ import UIKit
 class SplashViewController: UIViewController {
   
   var viewModel: SplashMainViewModelProtocol
+  var activityIndicator = ActivityIndicator()
   
   lazy var splashLabel: UILabel = {
     let label = UILabel()
@@ -34,6 +35,7 @@ class SplashViewController: UIViewController {
     setupGeneralView()
     setupSplashText()
     setupBindings()
+    applyActivityIndicator()
     viewModel.requestRemoteConfig()
   }
 }

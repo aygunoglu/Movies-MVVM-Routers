@@ -10,7 +10,12 @@ import UIKit
 extension SplashViewController {
   final func setupGeneralView() {
     view.backgroundColor = .systemBackground
-    navigationItem.title = "Welcome"
+    navigationItem.title = Constants.splashVCNavigationTitle
+  }
+  
+  final func applyActivityIndicator() {
+    activityIndicator.initialize(in: view)
+    activityIndicator.shouldAnimate(true)
   }
   
   final func setupSplashText() {
@@ -22,5 +27,7 @@ extension SplashViewController {
   final func setupBindings() {
     self.viewModel.updateUI = updateUI()
     self.viewModel.showInternetConnectionError = showConnectionError()
+    self.viewModel.startActivityIndicator = startActivityIndicator()
+    self.viewModel.stopActivityIndicator = stopActivityIndicator()
   }
 }
