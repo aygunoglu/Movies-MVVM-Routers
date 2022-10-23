@@ -194,6 +194,7 @@
 		BFE9A0AF290553FA00A2BDEC /* MovieDetailBaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailBaseCellViewModel.swift; sourceTree = "<group>"; };
 		BFE9A0B1290555B800A2BDEC /* MovieDetailNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailNetworkManager.swift; sourceTree = "<group>"; };
 		BFE9A0B32905561900A2BDEC /* MovieDetailParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailParser.swift; sourceTree = "<group>"; };
+		BFEED36D2905E50300288032 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CB12C233EA92FA890EAAD09F /* Pods_Movies_MVVM_RoutersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies_MVVM_RoutersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D1404A7C26330808C2E86A /* Pods-Movies-MVVM+RoutersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies-MVVM+RoutersTests.release.xcconfig"; path = "Target Support Files/Pods-Movies-MVVM+RoutersTests/Pods-Movies-MVVM+RoutersTests.release.xcconfig"; sourceTree = "<group>"; };
 		D334AD2C88E7B00E83F26A99 /* Pods_Movies_MVVM_Routers_Movies_MVVM_RoutersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies_MVVM_Routers_Movies_MVVM_RoutersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,6 +290,7 @@
 		BFC60BD52903E97800A96494 = {
 			isa = PBXGroup;
 			children = (
+				BFEED36D2905E50300288032 /* README.md */,
 				BFC60BE02903E97800A96494 /* Movies-MVVM+Routers */,
 				BFC60BF72903E97900A96494 /* Movies-MVVM+RoutersTests */,
 				BFC60C012903E97900A96494 /* Movies-MVVM+RoutersUITests */,
