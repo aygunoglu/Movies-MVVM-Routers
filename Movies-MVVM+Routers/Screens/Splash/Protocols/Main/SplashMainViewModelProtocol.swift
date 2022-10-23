@@ -16,5 +16,8 @@ protocol SplashMainViewModelProtocol {
   var splashText: String { get set }
   var splashTextFont: CGFloat { get set }
   
+  
+  var router: SplashRouterProtocol { get set }
+  
   func requestRemoteConfig()
 }

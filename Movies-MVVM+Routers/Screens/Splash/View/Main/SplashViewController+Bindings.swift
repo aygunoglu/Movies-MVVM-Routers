@@ -15,7 +15,6 @@ extension SplashViewController {
         self.splashLabel.text = self.viewModel.splashText
         self.splashLabel.font = .systemFont(ofSize: self.viewModel.splashTextFont, weight: .bold)
         self.activityIndicator.shouldAnimate(false)
-        self.navigationController?.pushViewController(ViewControllerMaker.searchViewController(), animated: true)
       }
     }
   }

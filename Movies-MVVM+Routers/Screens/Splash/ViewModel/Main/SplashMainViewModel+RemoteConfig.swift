@@ -38,6 +38,10 @@ extension SplashMainViewModel {
       self.splashText = self.remoteConfig.configValue(forKey: RemoteConfigModel.textString.key).stringValue ?? ""
       self.splashTextFont = self.remoteConfig.configValue(forKey: RemoteConfigModel.textFont.key).numberValue as? CGFloat ?? CGFloat(27)
       self.updateUI?()
+      
+      DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        self.router.goToSearchVC()
+      }
     }
   }
   

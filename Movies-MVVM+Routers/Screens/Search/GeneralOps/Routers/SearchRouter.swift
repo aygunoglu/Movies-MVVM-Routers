@@ -8,11 +8,12 @@
 import Foundation
 
 protocol SearchRouterProtocol: BaseRouterProtocol {
-  func goToDetailVC()
+  func goToDetailVC(with imdbID: String)
 }
 
 class SearchRouter: BaseRouter, SearchRouterProtocol {
-  func goToDetailVC() {
-    
+  func goToDetailVC(with imdbID: String) {
+    let movieDetailVC = ViewControllerMaker.movieDetailViewController(imdbID: imdbID)
+    pushViewController?(movieDetailVC)
   }
 }

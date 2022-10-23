@@ -9,7 +9,6 @@ import UIKit
 
 class SearchBaseCollectionViewCell: UICollectionViewCell {
   var viewModel: SearchBaseCellViewModelProtocol!
-  var router: SearchRouterProtocol!
   
   override func awakeFromNib() {
     super.awakeFromNib()

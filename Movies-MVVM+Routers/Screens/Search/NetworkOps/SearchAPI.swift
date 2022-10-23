@@ -9,6 +9,7 @@ import Moya
 
 enum SearchAPIMethod {
   case getSearchResults(page: Int, searchText: String)
+  case getMovieDetail(imdbID: String)
 }
 
 struct SearchAPI {
@@ -23,8 +24,7 @@ extension SearchAPI: TargetType {
   
   var method: Moya.Method {
     switch apiMethod {
-    case .getSearchResults:
-      return .get
+    default: return .get
     }
   }
   
@@ -40,6 +40,10 @@ extension SearchAPI: TargetType {
     case .getSearchResults(let page, let searchText):
       params[Keys.searchText.rawValue] = searchText
       params[Keys.page.rawValue] = page
+      params[Keys.contentType.rawValue] = "movie"
+      return .requestParameters(parameters: params, encoding: URLEncoding.default)
+    case .getMovieDetail(let imdbID):
+      params[Keys.detailID.rawValue] = imdbID
       return .requestParameters(parameters: params, encoding: URLEncoding.default)
     }
   }
@@ -51,8 +55,13 @@ extension SearchAPI: TargetType {
 
 extension SearchAPI {
   private enum Keys: String {
+    //General
+    case apiKey = "apiKey"
+    //Search
     case searchText = "s"
     case page = "page"
-    case apiKey = "apiKey"
+    case contentType = "type"
+    //Detail
+    case detailID = "i"
   }
 }

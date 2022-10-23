@@ -9,15 +9,12 @@ import UIKit
 
 class SearchDataSource: NSObject, UICollectionViewDataSource {
   let viewModel: SearchMainViewModelProtocol
-  let router: SearchRouterProtocol
   
-  init(viewModel: SearchMainViewModelProtocol, router: SearchRouterProtocol) {
+  init(viewModel: SearchMainViewModelProtocol) {
     self.viewModel = viewModel
-    self.router = router
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    print(viewModel.cellViewModels)
     return viewModel.cellViewModels.count
   }
   
@@ -28,7 +25,6 @@ class SearchDataSource: NSObject, UICollectionViewDataSource {
       fatalError()
     }
     cell.viewModel = cellViewModel
-    cell.router = router
     cell.configureCell()
     return cell
   }

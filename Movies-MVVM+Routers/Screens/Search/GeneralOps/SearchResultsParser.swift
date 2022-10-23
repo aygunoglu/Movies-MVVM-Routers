@@ -27,7 +27,11 @@ class SearchResultsParser: SearchResultsParserProtocol {
     let titleText = resultItem.title
     let releaseText = resultItem.year
     let imageURL = resultItem.poster
-    return SearchResultCellViewModel(titleText: titleText, releaseText: releaseText, imageURL: imageURL)
+    let imdbID = resultItem.imdbID
+    return SearchResultCellViewModel(titleText: titleText,
+                                     releaseText: releaseText,
+                                     imageURL: imageURL,
+                                     imdbID: imdbID)
   }
   
   private func createPlaceholderCellViewModel() -> SearchPlaceholderCellViewModelProtocol {

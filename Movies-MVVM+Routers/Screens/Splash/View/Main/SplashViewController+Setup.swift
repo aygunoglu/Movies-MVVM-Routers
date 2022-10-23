@@ -25,9 +25,11 @@ extension SplashViewController {
   }
   
   final func setupBindings() {
-    self.viewModel.updateUI = updateUI()
-    self.viewModel.showInternetConnectionError = showConnectionError()
-    self.viewModel.startActivityIndicator = startActivityIndicator()
-    self.viewModel.stopActivityIndicator = stopActivityIndicator()
+    viewModel.updateUI = updateUI()
+    viewModel.showInternetConnectionError = showConnectionError()
+    viewModel.startActivityIndicator = startActivityIndicator()
+    viewModel.stopActivityIndicator = stopActivityIndicator()
+    
+    viewModel.router.pushViewController = pushViewController()
   }
 }

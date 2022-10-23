@@ -9,21 +9,21 @@ import UIKit
 
 extension SearchViewController {
   final func setupGeneralView() {
-    view.backgroundColor = .systemPink
     navigationItem.title = Constants.searchVCNavigationTitle
+    navigationController?.navigationBar.prefersLargeTitles = false
   }
   
   final func applyActivityIndicator() {
-    activityIndicator.initialize(in: collectionView)
+    activityIndicator.initialize(in: view)
     activityIndicator.shouldAnimate(false)
   }
   
-//  final func setupSearchController() {
-//    navigationItem.searchController = searchController
-//    searchController.searchResultsUpdater = self
-//    searchController.searchBar.placeholder = Constants.searchBarPlaceholderText
-//    searchController.searchBar.scopeButtonTitles = SearchScope.allCases.map { $0.displayName }
-//  }
+  final func setupSearchController() {
+    navigationItem.searchController = searchController
+    navigationItem.hidesSearchBarWhenScrolling = false
+    searchController.searchBar.delegate = self
+    searchController.searchBar.placeholder = Constants.searchBarPlaceholderText
+  }
   
   final func setupCollectionView() {
     view.addSubview(collectionView)

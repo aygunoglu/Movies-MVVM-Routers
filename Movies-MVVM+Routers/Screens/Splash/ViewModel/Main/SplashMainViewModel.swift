@@ -19,6 +19,7 @@ class SplashMainViewModel: SplashMainViewModelProtocol {
   
   let remoteConfig = RemoteConfig.remoteConfig()
   let internetConnection: InternetConnectable = InternetConnection()
+  var router: SplashRouterProtocol = SplashRouter()
   
   init() {
     setupRemoteConfigDefaults()

@@ -20,6 +20,8 @@ class SearchNetworkManager: SearchNetworkManagerProtocol {
   }
   
   func requestPage(for paginationType: PaginationType) {
+    if paginationType == .initial { viewModel.startActivityIndicator?() }
+    
     let pageNumber = getPageNumber(paginationType: paginationType)
     guard let apiMethod = getAPIMethod(pageNumber: pageNumber) else { return }
     let target = SearchAPI(apiMethod: apiMethod)
@@ -32,7 +34,8 @@ class SearchNetworkManager: SearchNetworkManagerProtocol {
             let mappedData = try JSONDecoder().decode(SearchResponseModel.self, from: response.data)
             self.handleResult(for: paginationType, mappedData)
           } catch let error {
-            print(error)
+            self.viewModel.cellViewModels = []
+            self.viewModel.showEmptyState?()
           }
         case .failure(let error):
           print(error)
@@ -45,7 +48,7 @@ class SearchNetworkManager: SearchNetworkManagerProtocol {
     switch paginationType {
     case .initial:
       do {
-        requestPage = 0
+        requestPage = 1
         viewModel.cellViewModels = try parser.parseDataSource(from: responseModel, paginationType: .initial)
         if viewModel.cellViewModels.isEmpty { viewModel.showEmptyState?() } else { viewModel.updateUI?() }
       } catch let error {
@@ -75,7 +78,7 @@ class SearchNetworkManager: SearchNetworkManagerProtocol {
   }
   
   private func getAPIMethod(pageNumber: Int) -> SearchAPIMethod? {
-    return SearchAPIMethod.getSearchResults(page: pageNumber, searchText: "Batman")
+    return SearchAPIMethod.getSearchResults(page: pageNumber, searchText: viewModel.searchText)
   }
 }
 

@@ -20,4 +20,9 @@ struct Constants {
   
   static let searchResultCellIdentifier = "SearchResultCell"
   static let searchPlaceholderCellIdentifier = "SearchPlaceholderCell"
+  
+  static let movieDetailPosterCellIdentifier = "MovieDetailPosterCell"
+  static let movieDetailTitleCellIdentifier = "MovieDetailTitleCell"
+  static let movieDetailInfoCellIdentifier = "MovieDetailInfoCell"
+  static let movieDetailPlotCellIdentifier = "MovieDetailPlotCell"
 }

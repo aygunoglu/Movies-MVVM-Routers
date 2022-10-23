@@ -12,6 +12,7 @@ protocol SearchResultCellViewModelProtocol: SearchBaseCellViewModelProtocol {
   var titleText: String { get }
   var releaseText: String { get }
   var imageURL: String { get }
+  var imdbID: String { get }
 }
 
 class SearchResultCellViewModel: SearchBaseCellViewModel, SearchResultCellViewModelProtocol {
@@ -19,11 +20,13 @@ class SearchResultCellViewModel: SearchBaseCellViewModel, SearchResultCellViewMo
   var titleText: String
   var releaseText: String
   var imageURL: String
+  var imdbID: String
   
-  init(titleText: String, releaseText: String, imageURL: String) {
+  init(titleText: String, releaseText: String, imageURL: String, imdbID: String) {
     self.titleText = titleText
     self.releaseText = releaseText
     self.imageURL = imageURL
+    self.imdbID = imdbID
     super.init()
     self.cellType = .resultsCell
   }

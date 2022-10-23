@@ -25,7 +25,7 @@ class SearchManager: SearchManagerProtocol {
   }()
   
   lazy var dataSource: SearchDataSource = {
-    return SearchDataSource(viewModel: viewModel, router: router)
+    return SearchDataSource(viewModel: viewModel)
   }()
   
   lazy var router: SearchRouterProtocol = {

@@ -13,6 +13,8 @@ protocol SearchMainViewModelProtocol {
   var cellViewModels: [SearchBaseCellViewModelProtocol] { get set }
   var updateUI: VoidHandler? { get set }
   var showEmptyState: VoidHandler? { get set }
+  
+  var searchText: String { get set }
 }
 
 class SearchMainViewModel: SearchMainViewModelProtocol {
@@ -22,6 +24,7 @@ class SearchMainViewModel: SearchMainViewModelProtocol {
   var showEmptyState: VoidHandler?
   
   var cellViewModels: [SearchBaseCellViewModelProtocol] = []
+  var searchText = ""
   
   init() {
     

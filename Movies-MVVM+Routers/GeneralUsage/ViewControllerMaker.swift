@@ -19,4 +19,9 @@ extension ViewControllerMaker {
     let manager = SearchManager()
     return SearchViewController(manager: manager)
   }
+  
+  static func movieDetailViewController(imdbID: String) -> MovieDetailViewController {
+    let manager = MovieDetailManager(imdbID: imdbID)
+    return MovieDetailViewController(manager: manager)
+  }
 }

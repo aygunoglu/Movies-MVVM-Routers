@@ -33,24 +33,16 @@ class SearchViewController: UIViewController {
     super.viewDidLoad()
     setupGeneralView()
     setupCollectionView()
+    setupSearchController()
     setupBindings()
     applyActivityIndicator()
-    manager.networkManager.requestPage()
   }
 }
 
-extension SearchViewController: UICollectionViewDelegateFlowLayout {
-  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-    return UIEdgeInsets(top: 15, left: 10, bottom: 10, right: 10)
-  }
-
-  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    let width = (view.frame.width - 30) / 2
-    return CGSize(width: width, height: 296)
-  }
-  
-  func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-    let cell = cell as? SearchPlaceholderCell
-    cell?.willDisplay()
+extension SearchViewController: UISearchBarDelegate {
+  func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    guard let text = searchBar.text else { return }
+    manager.viewModel.searchText = text
+    manager.networkManager.requestPage()
   }
 }

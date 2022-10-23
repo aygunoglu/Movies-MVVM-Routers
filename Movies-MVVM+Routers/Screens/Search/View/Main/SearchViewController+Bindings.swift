@@ -12,6 +12,7 @@ extension SearchViewController {
     return { [weak self] in
       DispatchQueue.main.async {
         guard let self = self else { return }
+        self.activityIndicator.shouldAnimate(false)
         self.collectionView.backgroundView = nil
         self.collectionView.alwaysBounceVertical = true
         self.collectionView.reloadData()
@@ -23,6 +24,7 @@ extension SearchViewController {
     return { [weak self] in
       DispatchQueue.main.async {
         guard let self = self else { return }
+        self.activityIndicator.shouldAnimate(false)
         self.collectionView.setEmptyMessage(Constants.emptyStateMessage)
         self.collectionView.alwaysBounceVertical = false
         self.collectionView.reloadData()
