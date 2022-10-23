@@ -27,6 +27,7 @@ class MovieDetailViewController: UIViewController {
     setupGeneralView()
     setupTableView()
     setupBindings()
+    applyActivityIndicator()
     manager.networkManager.requestPage()
   }
 }

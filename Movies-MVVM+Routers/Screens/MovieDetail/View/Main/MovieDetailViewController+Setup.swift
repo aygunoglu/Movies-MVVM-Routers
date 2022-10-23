@@ -13,6 +13,11 @@ extension MovieDetailViewController {
     navigationController?.navigationBar.prefersLargeTitles = false
   }
   
+  final func applyActivityIndicator() {
+    activityIndicator.initialize(in: view)
+    activityIndicator.shouldAnimate(true)
+  }
+  
   final func setupTableView() {
     self.tableView = UITableView(frame: .zero, style: .plain)
     self.tableView.delegate = self
@@ -37,6 +42,8 @@ extension MovieDetailViewController {
   }
   
   final func setupBindings() {
+    self.manager.viewModel.startActivityIndicator = startActivityIndicator()
+    self.manager.viewModel.stopActivityIndicator = stopActivityIndicator()
     self.manager.viewModel.updateUI = updateUI()
   }
 }
