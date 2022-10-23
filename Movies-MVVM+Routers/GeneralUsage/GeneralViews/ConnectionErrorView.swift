@@ -22,10 +22,10 @@ class ConnectionErrorView {
     alertView.addSubview(titleLabel)
 
     let subtitleLabel = UILabel()
-    subtitleLabel.text = "Make sure your device has an internet connection before trying again."
+    subtitleLabel.text = "Make sure your device has stable internet connection before trying again."
     subtitleLabel.textColor = UIColor(red: 153/255.0, green: 153/255.0, blue: 153/255.0, alpha: 1)
     subtitleLabel.textAlignment = .center
-    subtitleLabel.numberOfLines = 2
+    subtitleLabel.numberOfLines = 0
     subtitleLabel.font = .systemFont(ofSize: 18, weight: .regular)
     subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
     alertView.addSubview(subtitleLabel)
@@ -42,14 +42,15 @@ class ConnectionErrorView {
     alertView.heightAnchor.constraint(equalTo: superView.safeAreaLayoutGuide.heightAnchor).isActive = true
     alertView.centerXAnchor.constraint(equalTo: superView.centerXAnchor).isActive = true
     alertView.centerYAnchor.constraint(equalTo: superView.centerYAnchor).isActive = true
-    titleLabel.centerXAnchor.constraint(equalTo: alertView.centerXAnchor).isActive = true
-    titleLabel.topAnchor.constraint(equalTo: alertView.topAnchor, constant: 200).isActive = true
     imageView.centerXAnchor.constraint(equalTo: alertView.centerXAnchor).isActive = true
-    imageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16).isActive = true
+    imageView.centerYAnchor.constraint(equalTo: alertView.centerYAnchor).isActive = true
+    titleLabel.centerXAnchor.constraint(equalTo: alertView.centerXAnchor).isActive = true
+    titleLabel.bottomAnchor.constraint(equalTo: imageView.topAnchor, constant: -16).isActive = true
     
     subtitleLabel.centerXAnchor.constraint(equalTo: alertView.centerXAnchor).isActive = true
     subtitleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 16).isActive = true
     subtitleLabel.rightAnchor.constraint(equalTo: alertView.rightAnchor, constant: -48).isActive = true
     subtitleLabel.leftAnchor.constraint(equalTo: alertView.leftAnchor, constant: 48).isActive = true
+    subtitleLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 40).isActive = true
   }
 }

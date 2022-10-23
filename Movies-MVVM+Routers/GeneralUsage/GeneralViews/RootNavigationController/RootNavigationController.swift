@@ -24,7 +24,7 @@ class RootNavigationController: UINavigationController {
   private func setupAppearance() {
     let appearance = UINavigationBarAppearance()
     appearance.configureWithOpaqueBackground()
-    appearance.titleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 20.0), .foregroundColor: UIColor.systemBlue]
+    appearance.titleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 20.0), .foregroundColor: UIColor.label]
 
     navigationBar.tintColor = .label
     navigationBar.standardAppearance = appearance

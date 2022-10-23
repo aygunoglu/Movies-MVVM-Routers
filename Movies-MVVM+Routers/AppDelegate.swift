@@ -15,12 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     FirebaseApp.configure()
+    
     Messaging.messaging().delegate = self
     UNUserNotificationCenter.current().delegate = self
     
     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { success, _ in
       guard success else { return }
-      print("APN REgistery success")
+      print("Apn REgistery success")
     }
     
     application.registerForRemoteNotifications()

@@ -25,6 +25,7 @@ class SearchNetworkManager: SearchNetworkManagerProtocol {
     let pageNumber = getPageNumber(paginationType: paginationType)
     guard let apiMethod = getAPIMethod(pageNumber: pageNumber) else { return }
     let target = SearchAPI(apiMethod: apiMethod)
+    
     SearchAPIProvider.apiProvider.request(target) { [weak self] result in
       guard let self = self else { return }
       DispatchQueue.global(qos: .userInitiated).async {
@@ -32,7 +33,7 @@ class SearchNetworkManager: SearchNetworkManagerProtocol {
         case .success(let response):
           do {
             let mappedData = try JSONDecoder().decode(SearchResponseModel.self, from: response.data)
-            self.handleResult(for: paginationType, mappedData)
+            self.handleResponse(for: paginationType, mappedData)
           } catch let error {
             self.viewModel.cellViewModels = []
             self.viewModel.showEmptyState?()
@@ -42,9 +43,10 @@ class SearchNetworkManager: SearchNetworkManagerProtocol {
         }
       }
     }
+    
   }
   
-  private func handleResult(for paginationType: PaginationType, _ responseModel: SearchResponseModel) {
+  private func handleResponse(for paginationType: PaginationType, _ responseModel: SearchResponseModel) {
     switch paginationType {
     case .initial:
       do {

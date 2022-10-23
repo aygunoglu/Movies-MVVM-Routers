@@ -17,8 +17,6 @@ extension SplashMainViewModel {
   }
   
   func requestRemoteConfig() {
-    remoteConfig.configSettings.minimumFetchInterval = 0
-    
     remoteConfig.fetch(withExpirationDuration: 0) { [weak self] (status, error) in
       guard let self = self else { return }
       switch status {
@@ -31,12 +29,12 @@ extension SplashMainViewModel {
     }
   }
   
-  fileprivate func handleSuccessStatus() {
+  private func handleSuccessStatus() {
     self.remoteConfig.activate { _, error in
       guard error == nil else { return }
       
       self.splashText = self.remoteConfig.configValue(forKey: RemoteConfigModel.textString.key).stringValue ?? ""
-      self.splashTextFont = self.remoteConfig.configValue(forKey: RemoteConfigModel.textFont.key).numberValue as? CGFloat ?? CGFloat(27)
+      self.splashTextFont = self.remoteConfig.configValue(forKey: RemoteConfigModel.textFont.key).numberValue as? CGFloat ?? 27
       self.updateUI?()
       
       DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
@@ -45,7 +43,7 @@ extension SplashMainViewModel {
     }
   }
   
-  fileprivate func handleFailureStatus(error: Error?) {
+  private func handleFailureStatus(error: Error?) {
     if !internetConnection.isReachable {
       showInternetConnectionError?()
       stopActivityIndicator?()

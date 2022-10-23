@@ -119,7 +119,7 @@
 		BFC60BDE2903E97800A96494 /* Movies-MVVM+Routers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movies-MVVM+Routers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC60BE12903E97800A96494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC60BE32903E97800A96494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFC60BEA2903E97900A96494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFC60BEA2903E97900A96494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SupportingFiles/Assets.xcassets; sourceTree = "<group>"; };
 		BFC60BED2903E97900A96494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFC60BEF2903E97900A96494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC60BF42903E97900A96494 /* Movies-MVVM+RoutersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movies-MVVM+RoutersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,20 +286,6 @@
 			path = GeneralUsage;
 			sourceTree = "<group>";
 		};
-		BFB2D2FF2905B02A004A709F /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				BF9934CB290590BE002C7E64 /* Movies-MVVM+Routers.entitlements */,
-				BFC60BE12903E97800A96494 /* AppDelegate.swift */,
-				BFC60BE32903E97800A96494 /* SceneDelegate.swift */,
-				BFC60BEA2903E97900A96494 /* Assets.xcassets */,
-				BFC60BEC2903E97900A96494 /* LaunchScreen.storyboard */,
-				BFC60BEF2903E97900A96494 /* Info.plist */,
-				BFDC7E87290595CE001DA6F2 /* GoogleService-Info.plist */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
 		BFC60BD52903E97800A96494 = {
 			isa = PBXGroup;
 			children = (
@@ -327,7 +313,13 @@
 			children = (
 				BF6A20532903F1CD00DB3942 /* GeneralUsage */,
 				BF6A20522903F1C700DB3942 /* Screens */,
-				BFB2D2FF2905B02A004A709F /* SupportingFiles */,
+				BF9934CB290590BE002C7E64 /* Movies-MVVM+Routers.entitlements */,
+				BFC60BE12903E97800A96494 /* AppDelegate.swift */,
+				BFC60BE32903E97800A96494 /* SceneDelegate.swift */,
+				BFC60BEA2903E97900A96494 /* Assets.xcassets */,
+				BFC60BEC2903E97900A96494 /* LaunchScreen.storyboard */,
+				BFC60BEF2903E97900A96494 /* Info.plist */,
+				BFDC7E87290595CE001DA6F2 /* GoogleService-Info.plist */,
 			);
 			path = "Movies-MVVM+Routers";
 			sourceTree = "<group>";

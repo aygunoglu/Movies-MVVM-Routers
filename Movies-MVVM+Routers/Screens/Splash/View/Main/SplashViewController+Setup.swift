@@ -20,8 +20,8 @@ extension SplashViewController {
   
   final func setupSplashText() {
     view.addSubview(splashLabel)
-    splashLabel.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
-    splashLabel.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
+    splashLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    splashLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
   }
   
   final func setupBindings() {

@@ -13,7 +13,6 @@ protocol MovieDetailNetworkManagerProtocol: BaseNetworkManagerProtocol {}
 class MovieDetailNetworkManager: MovieDetailNetworkManagerProtocol {
   private var viewModel: MovieDetailMainViewModelProtocol
   private var parser: MovieDetailParserProtocol
-  private var requestPage = 1
   
   init(viewModel: MovieDetailMainViewModelProtocol, parser: MovieDetailParserProtocol) {
     self.viewModel = viewModel
@@ -25,6 +24,7 @@ class MovieDetailNetworkManager: MovieDetailNetworkManagerProtocol {
     
     guard let apiMethod = getAPIMethod() else { return }
     let target = SearchAPI(apiMethod: apiMethod)
+    
     SearchAPIProvider.apiProvider.request(target) { [weak self] result in
       guard let self = self else { return }
       DispatchQueue.global(qos: .userInitiated).async {
@@ -32,7 +32,7 @@ class MovieDetailNetworkManager: MovieDetailNetworkManagerProtocol {
         case .success(let response):
           do {
             let mappedData = try JSONDecoder().decode(MovieDetailResponseModel.self, from: response.data)
-            self.handleResult(mappedData)
+            self.handleResponse(mappedData)
           } catch let error {
             print(error)
           }
@@ -41,9 +41,10 @@ class MovieDetailNetworkManager: MovieDetailNetworkManagerProtocol {
         }
       }
     }
+    
   }
   
-  private func handleResult(_ responseModel: MovieDetailResponseModel) {
+  private func handleResponse(_ responseModel: MovieDetailResponseModel) {
     do {
       viewModel.cellViewModels = try parser.parseDataSource(from: responseModel)
       logDetailDataToFirebase(from: responseModel)
@@ -55,7 +56,7 @@ class MovieDetailNetworkManager: MovieDetailNetworkManagerProtocol {
   
   private func logDetailDataToFirebase(from model: MovieDetailResponseModel) {
     Analytics.logEvent(Constants.movieDetailLogKey, parameters: [Constants.movieTitle: model.title,
-                                                                 Constants.movieReleaseDate: model.year,
+                                                                 Constants.movieReleaseDate: model.released,
                                                                  Constants.movieGenres: model.genre,
                                                                  Constants.movieRuntime: model.runtime,
                                                                  Constants.moviePosterURL: model.poster])
