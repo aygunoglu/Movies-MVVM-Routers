@@ -25,4 +25,13 @@ struct Constants {
   static let movieDetailTitleCellIdentifier = "MovieDetailTitleCell"
   static let movieDetailInfoCellIdentifier = "MovieDetailInfoCell"
   static let movieDetailPlotCellIdentifier = "MovieDetailPlotCell"
+  
+  // Firebase Log
+  static let movieDetailLogKey = "movie_detail_info"
+  static let movieTitle = "movie_title"
+  static let movieReleaseDate = "movie_release_date"
+  static let moviePosterURL = "movie_poster_url"
+  static let movieGenres = "movie_genres"
+  static let movieRuntime = "movie_runtime"
+  
 }

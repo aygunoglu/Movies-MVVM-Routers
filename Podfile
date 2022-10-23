@@ -9,6 +9,7 @@ target 'Movies-MVVM+Routers' do
   pod 'Kingfisher', '~> 7.2.2'
   pod "Firebase/Core"
   pod "Firebase/RemoteConfig"
+  pod "Firebase/Messaging"
 
   target 'Movies-MVVM+RoutersTests' do
     inherit! :search_paths

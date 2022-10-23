@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 protocol MovieDetailNetworkManagerProtocol: BaseNetworkManagerProtocol {}
 
@@ -45,11 +46,19 @@ class MovieDetailNetworkManager: MovieDetailNetworkManagerProtocol {
   private func handleResult(_ responseModel: MovieDetailResponseModel) {
     do {
       viewModel.cellViewModels = try parser.parseDataSource(from: responseModel)
-      print(viewModel.cellViewModels)
+      logDetailDataToFirebase(from: responseModel)
       viewModel.updateUI?()
     } catch let error {
       print(error)
     }
+  }
+  
+  private func logDetailDataToFirebase(from model: MovieDetailResponseModel) {
+    Analytics.logEvent(Constants.movieDetailLogKey, parameters: [Constants.movieTitle: model.title,
+                                                                 Constants.movieReleaseDate: model.year,
+                                                                 Constants.movieGenres: model.genre,
+                                                                 Constants.movieRuntime: model.runtime,
+                                                                 Constants.moviePosterURL: model.poster])
   }
   
   private func getAPIMethod() -> SearchAPIMethod? {

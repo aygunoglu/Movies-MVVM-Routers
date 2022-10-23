@@ -8,6 +8,21 @@
 import UIKit
 import FirebaseRemoteConfig
 
+protocol SplashMainViewModelProtocol {
+  var startActivityIndicator: VoidHandler? { get set }
+  var stopActivityIndicator: VoidHandler? { get set }
+  var showInternetConnectionError: VoidHandler? { get set }
+  var updateUI: VoidHandler? { get set }
+  
+  var splashText: String { get set }
+  var splashTextFont: CGFloat { get set }
+  
+  
+  var router: SplashRouterProtocol { get set }
+  
+  func requestRemoteConfig()
+}
+
 class SplashMainViewModel: SplashMainViewModelProtocol {
   var startActivityIndicator: VoidHandler?
   var stopActivityIndicator: VoidHandler?

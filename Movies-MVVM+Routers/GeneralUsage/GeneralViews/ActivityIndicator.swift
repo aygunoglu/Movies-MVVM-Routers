@@ -17,7 +17,7 @@ class ActivityIndicator {
   
   private var loadingView: UIView = {
     let view = UIView()
-    view.backgroundColor = .systemBackground
+    view.backgroundColor = .systemGray5
     view.widthAnchor.constraint(equalToConstant: 180).isActive = true
     view.heightAnchor.constraint(equalToConstant: 110).isActive = true
     view.layer.cornerRadius = 10
