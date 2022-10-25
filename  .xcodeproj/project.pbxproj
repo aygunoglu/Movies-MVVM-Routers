@@ -11,6 +11,9 @@
 		ADD908743A11BBB36B3833ED /* Pods_Movies_MVVM_RoutersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB12C233EA92FA890EAAD09F /* Pods_Movies_MVVM_RoutersTests.framework */; };
 		BF583DD62903F33F001583CB /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF583DD52903F33F001583CB /* RootNavigationController.swift */; };
 		BF583DD92903F3D4001583CB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF583DD82903F3D4001583CB /* SplashViewController.swift */; };
+		BFAD7F082908009100F2E99D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7F072908009100F2E99D /* README.md */; };
+		BFAD7F092908009100F2E99D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7F072908009100F2E99D /* README.md */; };
+		BFAD7F0A2908009100F2E99D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BFAD7F072908009100F2E99D /* README.md */; };
 		BFC60BE22903E97800A96494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC60BE12903E97800A96494 /* AppDelegate.swift */; };
 		BFC60BE42903E97800A96494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC60BE32903E97800A96494 /* SceneDelegate.swift */; };
 		BFC60BEB2903E97900A96494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC60BEA2903E97900A96494 /* Assets.xcassets */; };
@@ -116,6 +119,7 @@
 		BF583DD52903F33F001583CB /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		BF583DD82903F3D4001583CB /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		BF9934CB290590BE002C7E64 /* Movies-MVVM+Routers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Movies-MVVM+Routers.entitlements"; sourceTree = "<group>"; };
+		BFAD7F072908009100F2E99D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BFC60BDE2903E97800A96494 /* Movies-MVVM+Routers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movies-MVVM+Routers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC60BE12903E97800A96494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC60BE32903E97800A96494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,7 +198,6 @@
 		BFE9A0AF290553FA00A2BDEC /* MovieDetailBaseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailBaseCellViewModel.swift; sourceTree = "<group>"; };
 		BFE9A0B1290555B800A2BDEC /* MovieDetailNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailNetworkManager.swift; sourceTree = "<group>"; };
 		BFE9A0B32905561900A2BDEC /* MovieDetailParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailParser.swift; sourceTree = "<group>"; };
-		BFEED36D2905E50300288032 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CB12C233EA92FA890EAAD09F /* Pods_Movies_MVVM_RoutersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies_MVVM_RoutersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D1404A7C26330808C2E86A /* Pods-Movies-MVVM+RoutersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies-MVVM+RoutersTests.release.xcconfig"; path = "Target Support Files/Pods-Movies-MVVM+RoutersTests/Pods-Movies-MVVM+RoutersTests.release.xcconfig"; sourceTree = "<group>"; };
 		D334AD2C88E7B00E83F26A99 /* Pods_Movies_MVVM_Routers_Movies_MVVM_RoutersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movies_MVVM_Routers_Movies_MVVM_RoutersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,7 +293,7 @@
 		BFC60BD52903E97800A96494 = {
 			isa = PBXGroup;
 			children = (
-				BFEED36D2905E50300288032 /* README.md */,
+				BFAD7F072908009100F2E99D /* README.md */,
 				BFC60BE02903E97800A96494 /* Movies-MVVM+Routers */,
 				BFC60BF72903E97900A96494 /* Movies-MVVM+RoutersTests */,
 				BFC60C012903E97900A96494 /* Movies-MVVM+RoutersUITests */,
@@ -789,6 +792,7 @@
 			files = (
 				BFE9A08F2905465A00A2BDEC /* MovieDetailTitleCell.xib in Resources */,
 				BFE9A0972905467D00A2BDEC /* MovieDetailPlotCell.xib in Resources */,
+				BFAD7F082908009100F2E99D /* README.md in Resources */,
 				BFDC7E88290595CE001DA6F2 /* GoogleService-Info.plist in Resources */,
 				BFC60BEE2903E97900A96494 /* LaunchScreen.storyboard in Resources */,
 				BFCAA73D29047406004DB3BA /* SearchPlaceholderCell.xib in Resources */,
@@ -803,6 +807,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFAD7F092908009100F2E99D /* README.md in Resources */,
 				BFDC7E89290595CE001DA6F2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -811,6 +816,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFAD7F0A2908009100F2E99D /* README.md in Resources */,
 				BFDC7E8A290595CE001DA6F2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
