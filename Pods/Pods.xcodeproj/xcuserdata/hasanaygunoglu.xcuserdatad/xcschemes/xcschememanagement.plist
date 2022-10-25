@@ -79,17 +79,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Movies-MVVM+Routers-Movies-MVVM+RoutersUITests.xcscheme</key>
+		<key>Pods-Movies-MVVM-Routers-Movies-MVVM-RoutersUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Movies-MVVM+Routers.xcscheme</key>
+		<key>Pods-Movies-MVVM-Routers.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Movies-MVVM+RoutersTests.xcscheme</key>
+		<key>Pods-Movies-MVVM-RoutersTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

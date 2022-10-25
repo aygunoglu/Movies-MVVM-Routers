@@ -1,0 +1,6 @@
+framework module Pods_Movies_MVVM_Routers_Movies_MVVM_RoutersUITests {
+  umbrella header "Pods-Movies-MVVM-Routers-Movies-MVVM-RoutersUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
