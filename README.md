@@ -3,7 +3,6 @@
 ## Screens:
 
 <p>
-<img width="200px" src="https://user-images.githubusercontent.com/81817904/197419255-ba2dfc2c-dba6-44d5-af77-948abd012663.gif">
 <img width="200px" src="https://user-images.githubusercontent.com/81817904/197419258-1af48896-8300-43a8-a3ba-c4a83c0a1add.gif">
   <img src="https://user-images.githubusercontent.com/81817904/197418915-2a175b53-3700-4d17-a4a3-4f62b589e3b6.jpeg" width="200" />
 </p>
